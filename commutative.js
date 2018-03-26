@@ -117,7 +117,7 @@ function newDiagram() {
 var shuffleGrammar = {
     "origin": "#initcounter##buildstack##element##element##element##element##element##element##element##element##element#",
     "element" : "#stack#[stack:POP]",
-    "counter" : "[bs4:][bs16:][buildstack:]",
+    "counter" : "[buildstack:]",
     "initcounter" : "[counter:][counter:][counter:][counter:][counter:][counter:][counter:][counter:][counter:]",
     "e1" : "[stack:1][e1:][counter:POP]",
     "e2" : "[stack:2][e2:][counter:POP]",
@@ -128,10 +128,7 @@ var shuffleGrammar = {
     "e7" : "[stack:7][e7:][counter:POP]",
     "e8" : "[stack:8][e8:][counter:POP]",
     "e9" : "[stack:9][e9:][counter:POP]",
-    "buildstack" : "#bs16##bs16##bs16##bs16#",
-    "bs16" : "#bs4##bs4##bs4##bs4#",
-    "bs4" : "#bs1##bs1##bs1##bs1#",
-    "bs1" : ".#elements##counter#",
+    "buildstack" : ".#elements##counter##buildstack#",
     "elements" : [ "#e1#", "#e2#", "#e3#", "#e4#", "#e5#",
 		   "#e6#", "#e7#", "#e8#", "#e9#" ]
 };
